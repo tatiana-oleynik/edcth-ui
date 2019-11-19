@@ -1,0 +1,58 @@
+.sidebar {
+  position: relative;
+  width: 60px;
+}
+
+.sidebar__list {
+  @include indents;
+  margin-left: 20px;
+
+  list-style: none;
+}
+
+.sidebar__item {
+  margin-bottom: 30px;
+}
+
+.sidebar__square {
+  width: 40px;
+  height: 40px;
+
+  margin-left: 10px;
+  margin-bottom: 300px;
+
+  border-radius: 5px;
+  background-color: #44519e;
+}
+
+.sidebar__number {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+
+  @include indents;
+  margin-top: 10px;
+  padding-top: 10px;
+
+  text-align: center;
+}
+
+.sidebar__icon path {
+  stroke: #adb5ca;
+}
+
+.sidebar__icon--active path {
+  stroke: #54c5eb;
+}
+
+.sidebar__photo {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+
+  width: 60px;
+  height: 65px;
+  padding-left: 55px;
+
+  background: url(img/avatar.jpg) no-repeat center;
+}
