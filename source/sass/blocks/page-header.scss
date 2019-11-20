@@ -1,0 +1,81 @@
+.page-header {
+  display: flex;
+}
+
+.page-header__list {
+  @include indents;
+  display: flex;
+  width: 300px;
+  height: 90px;
+
+  padding-left: 150px;
+
+  list-style: none;
+  background-color: #f7f7fa;
+}
+
+.page-header__item {
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.page-header__link--hands {
+  position: relative;
+}
+
+.page-header__square {
+  display: block;
+  width: 42px;
+  height: 40px;
+
+  position: absolute;
+  top: -10px;
+
+  border-radius: 5px;
+  background-color: #dc045c;
+}
+
+.page-header__square::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  background: url("img/clapping-hands.svg") no-repeat;
+}
+
+.page-header__title-container {
+  margin-right: 300px;
+}
+
+.page-header__subtitle {
+  @include indents;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-size: 15px;
+  color: #a7b0c2;
+}
+
+.page-header__title {
+  @include indents;
+
+  font-size: 36px;
+  color: #191f5d;
+}
+
+.page-header__search path {
+  stroke: #223975;
+}
+
+.page-header__group path {
+  fill: #223975;
+}
+
+.page-header__hands path {
+  fill: #ffffff;
+}
