@@ -1,0 +1,63 @@
+.graphs__list {
+  @include indents;
+  display: flex;
+  margin: 60px 70px 50px 0;
+
+  list-style: none;
+}
+
+.graphs__item {
+  width: 200px;
+  min-height: 140px;
+  margin-right: 25px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(247, 247, 247, 1);
+}
+
+.graphs__item--right::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -50px;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/bookmark.svg") no-repeat;
+}
+
+.graphs__title {
+  @include indents;
+  position: relative;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #262d73;
+
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.graphs__title--left::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -50px;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/twitter.svg") no-repeat;
+}
+
+.graphs__subtitle {
+  @include indents;
+  font-size: 12px;
+  color: #a7b0c2;
+  text-transform: uppercase;
+
+  margin-left: 70px;
+}
