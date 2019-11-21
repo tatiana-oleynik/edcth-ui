@@ -44,15 +44,3 @@
 .sidebar__icon--active path {
   stroke: #54c5eb;
 }
-
-.sidebar__photo {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-
-  width: 60px;
-  height: 65px;
-  padding-left: 55px;
-
-  background: url(../img/avatar.jpg) no-repeat center;
-}
