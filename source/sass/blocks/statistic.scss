@@ -1,0 +1,158 @@
+.statistic {
+  display: flex;
+}
+
+.statistic__top,
+.statistic__worst {
+  margin-right: 60px;
+}
+
+.statistic__list {
+  @include indents;
+
+  list-style: none;
+}
+
+.statistic__top,
+.statistic__worst {
+  width: 250px;
+}
+
+.statistic__title {
+  font-size: 16px;
+  color: #191f5d;
+}
+
+.statistic__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.statistic__wrapper-text {
+  width: 110px;
+  margin-right: 40px;
+}
+
+.statistic__top-text {
+  @include indents;
+  font-size: 15px;
+  font-weight: bold;
+  color: #191f5d;
+
+  text-transform: uppercase;
+}
+
+.statistic__bottom-text,
+.statistic__bottom-percent {
+  @include indents;
+  font-size: 12px;
+  font-weight: bold;
+  color: #a7b0c2;
+}
+
+.statistic__bottom-percent {
+  margin-top: 10px;
+}
+
+.statistic__logo {
+  position: relative;
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.statistic__logo::before {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.statistic__logo--apple::before {
+  background: url("../img/apple-logo.svg") no-repeat;
+}
+
+.statistic__logo--issuu::before {
+  background: url("../img/issuu.svg") no-repeat;
+}
+
+.statistic__logo--lg::before {
+  background: url("../img/onedrive.svg") no-repeat;
+}
+
+.statistic__logo--intel::before {
+  background: url("../img/intel.svg") no-repeat;
+}
+
+.statistic__logo--yahoo::before {
+  background: url("../img/yahoo.svg") no-repeat;
+}
+
+.statistic__logo--google::before {
+  background: url("../img/yahoo.svg") no-repeat;
+}
+
+.statistic__logo--google::before {
+  background: url("../img/google.svg") no-repeat;
+}
+
+.statistic__details--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.statistic__details-item {
+  width: 67px;
+  margin-right: 21px;
+  margin-bottom: 30px;
+
+  &--last {
+    margin-right: 0
+  }
+}
+
+.statistic__details-text,
+.statistic__details-figures {
+  @include indents;
+}
+
+.statistic__details-text {
+  font-size: 11px;
+  color: #a0a8be;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+
+.statistic__details-figures {
+  font-size: 13px;
+  font-weight: bold;
+  color: #212663;
+}
+
+.statistic__details--title {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.statistic__details--title::after {
+  content: "";
+
+  position: absolute;
+  top: 40px;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+
+  background-color: #d9e1f9;
+}
